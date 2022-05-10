@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #F6FCFF;
 }
 
 .App-logo {
@@ -35,4 +36,212 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  clear:both;
+  overflow:auto;
+  padding-top: 40px;
+  padding-left: 50px;
+
+}
+
+nav{float:right;}
+
+.logo img{float:left;}
+
+ul li{
+  display: inline-block; padding-inline:30px;
+  font-size:25px; font-family: 'Roboto Slab',serif ;
+  font-weight: 500;
+  color: #0c63e4;
+}
+
+ul li:hover{
+  color:orange;
+  
+}
+
+.btn-class1{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* containe_faq */
+/* 
+.container_faq{
+position: relative;
+width: 1269px;
+height: 186px;
+
+
+background: white;
+border-radius: 54px;
+} */
+
+/* body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(199, 233, 148, 1) 100%
+  );
+} */
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.accordion {
+  max-width: 100%;
+  margin: 0px auto; 
+  padding: 30px;
+  /* background: antiquewhite; */
+  text-align: center;
+  /* border-radius: 26px; */
+}
+
+/* .accordion-item{
+  background-color: #0c63e4;
+  border: 1px solid #dbd6d6;
+  border-radius: 26px;
+} */
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  cursor: pointer;
+  width: 90%;
+  height: 120px;
+  background: antiquewhite;
+  border-radius: 54px;
+  text-align: center;
+}
+
+/* .accordion-title:hover {
+  background-color: #3ab4cc;
+} */
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-button{
+  background: none;
+  border-radius: 26px;
+  font-size: 32px;
+}
+
+.accordion-content {
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}
+
+/* .main-heading{
+  border: 1px solid #dbd6d6;
+  border-radius: 26px;
+
+} */
+
+.header-heading{
+  border: 0;
+  border-radius: 26px;
+}
+
+.button-heading{
+  background: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.accordion-button:focus{
+  border-color: white;
+}
+
+
+.card1{
+  width: 300px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0;
+  border-radius: 25px;
+
+}
+
+.large-card{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 35px;
+  text-align: left;
+}
+
+.large-large-card{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 35px;
+  text-align: left;
+  /* background: url('./Crust.png') no-repeat right center, linear-gradient(to right, white,black);
+  background-image: url('./Crust.png')linear-gradient(to right,white,black); */
+  border-right: 10px solid transparent;
+}
+
+.topic-img{
+  text-align: right;
+}
+
+.footer {
+  background: #0F79BC;
+  color: white;
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links li a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, .1);
 }
